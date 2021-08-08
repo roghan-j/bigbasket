@@ -1,0 +1,5 @@
+pip install virtualenv
+virtualenv django_bb
+django_bb\scripts\activate
+pip freeze > requirements.txt
+pip install -r requirements.txt
