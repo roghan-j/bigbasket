@@ -83,13 +83,13 @@ html{
 
 .rupee-1{
     color: black;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0.5rem;
 }
 
 .rupee-2{
     color: black;
-    font-size: 6rem;
+    font-size: 4.5rem;
     margin: 0.5rem;
 }
 
@@ -98,7 +98,7 @@ html{
     height: 4rem;
     font-size: 2rem;
     border-radius: 25px;
-    margin: 3rem;
+    margin: 2rem 0 5rem 0;
 
     display: flex;
     flex-direction: row;
@@ -114,7 +114,7 @@ html{
 .btn-1{
     width: 20vw;
     height: 5rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     border-radius: 25px;
     
     display: flex;
@@ -130,6 +130,24 @@ html{
     margin: 2rem;
 }
 
+.btn-s{
+    width: 25vw;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 25px;
+    margin: 2rem 0 -1rem 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    color: white;
+    background-color: #19af8f;
+}
+
 .redirect{
     color: white;
     font-size: 2rem;
@@ -138,7 +156,7 @@ html{
 
 .redirect-2{
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0.5rem;
 }
 
@@ -236,7 +254,7 @@ html{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     /* align-items: center; */
     padding: 5rem 2rem; 
 
@@ -275,13 +293,14 @@ html{
 }
 
 .grouphead{
-    font-weight: 600;
+    font-weight: 550;
+    margin: 5rem 0 3rem 0;
 }
 /* End of Navbar */
  
 /* Login and Sign Up Forms */
 .form-heading{
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--lightblue);
     border-bottom: var(--lightblue) solid;
 }
@@ -293,7 +312,7 @@ html{
     padding: 5rem;
     border-radius: 10px;
 
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-left: 25vw;
     display: flex;
     flex-direction: column;
@@ -454,6 +473,7 @@ html{
     font-weight: 200;
     font-size: 5rem;
     background: -webkit-linear-gradient(var(--lightblue),black);
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -475,6 +495,7 @@ html{
     font-weight: 200;
     font-size: 3rem;
     background: -webkit-linear-gradient(var(--lightblue),black);
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -519,7 +540,7 @@ html{
 
 .price{
     color: black;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .price-sec{
@@ -544,7 +565,7 @@ html{
 }
 
 .desc{
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: black;
 }
 
@@ -561,8 +582,8 @@ html{
 }
 
 .cartpic{
-    width: 23vh;
-    height: 23rem;
+    width: 13vw;
+    height: 25vh;
     padding: 1rem;
 
     border-radius: 15px;
@@ -598,13 +619,13 @@ html{
 
 .total{
     width: 100rem;
-    margin-left: 20vw;
+    margin-left: 35vw;
 
     /* border: black solid; */
 }
 
 .totalprice{
-    font-size: 7rem;
+    font-size: 4.5rem;
     color: black;
 }
 
@@ -747,7 +768,7 @@ html{
 
 .style-1{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: black; 
     font-weight: 400;
 
@@ -756,7 +777,7 @@ html{
 
 .style-2{
     text-align: start;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 400;
     color: black; 
     
@@ -765,7 +786,7 @@ html{
 
 .style-3{
     text-align: end;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 400;
     color: black; 
 
@@ -773,7 +794,7 @@ html{
 }
 
 .style-4{
-    width: 70vw;
+    width: 72vw;
     text-align: end;
     font-size: 4rem;
     font-weight: 500;
@@ -801,7 +822,7 @@ html{
 }
 
 .pqty{
-    width: 5vw;
+    width: 6vw;
 }
 
 .pprice{
