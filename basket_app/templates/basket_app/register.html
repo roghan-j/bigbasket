@@ -7,7 +7,6 @@
         {% csrf_token %}
         <div class="input-field">
             <h1 class="input-heading">{{ customer_form.username.label }}</h1> 
-            <!-- doubt in label -->
             {% render_field customer_form.username class="input-box" placeholder="Enter username" %}
         </div>
         <div class="input-field">

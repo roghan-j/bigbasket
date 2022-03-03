@@ -46,7 +46,7 @@ html{
     width: 90vw;
     height: 100%;
 
-    margin: 1rem auto;
+    margin: 6rem auto 5rem auto;
     padding: 5rem;
     transition: all 0.5s;
 }
@@ -155,6 +155,11 @@ html{
 /* End of Common Styles */
 
 /* Taskbar */
+.disappear{
+    height: 0.5rem;
+    opacity: 0;
+}
+
 .taskbar{
     width: 100%;
     height: 8rem;
@@ -162,7 +167,7 @@ html{
     border-bottom: black solid;
     background-color: var(--darkblue);
     font-size: 3rem;
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -170,6 +175,7 @@ html{
     padding: 1rem 1rem;
 
     z-index: 200;
+    top:0;
 }
 
 .tb-link{
@@ -235,8 +241,8 @@ html{
     width: 30rem;
     font-size: 3rem;
 
-    margin-top: -8rem;
-    position: absolute;
+    /* margin-top: 1rem; */
+    position: fixed;
     border-right: black solid;
     background-image: linear-gradient(#138169, var(--lightblue));
     /* background-color: #1bcea8; */
@@ -297,10 +303,10 @@ html{
     width: 50vw;
     height: auto;
     background-color: var(--darkblue);
-    padding: 5rem;
+    padding: 3rem;
     border-radius: 10px;
 
-    margin-top: 10vh;
+    margin-top: 15vh;
     margin-left: 25vw;
     display: flex;
     flex-direction: column;
@@ -351,9 +357,6 @@ html{
     width: 100%;
     height: 100vh;
 
-    margin-top: -8rem;
-
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -461,6 +464,7 @@ html{
     font-weight: 200;
     font-size: 5rem;
     background: -webkit-linear-gradient(var(--lightblue),black);
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -482,6 +486,7 @@ html{
     font-weight: 200;
     font-size: 3rem;
     background: -webkit-linear-gradient(var(--lightblue),black);
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -661,25 +666,6 @@ html{
     justify-content: space-between;
 }
 /* End Of Cart-Display */
-
-/* Fill Up Form */
-.fillup{
-    width: 50vw;
-    height: auto;
-    background-color: var(--darkblue);
-    padding: 5rem;
-    border-radius: 10px;
-
-    margin-top: 10vh;
-    margin-left: 25vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-    box-shadow: black 2rem 3rem 5rem;
-}
-/* End Of Fill Up Form */
 
 /* Order Page */
 .all-orders{
