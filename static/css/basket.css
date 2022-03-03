@@ -46,7 +46,7 @@ html{
     width: 90vw;
     height: 100%;
 
-    margin: 1rem auto;
+    margin: 6rem auto 5rem auto;
     padding: 5rem;
     transition: all 0.5s;
 }
@@ -90,6 +90,12 @@ html{
 .rupee-2{
     color: black;
     font-size: 4.5rem;
+    margin: 0.5rem;
+}
+
+.rupee-3{
+    color: black;
+    font-size: 2.8rem;
     margin: 0.5rem;
 }
 
@@ -156,8 +162,13 @@ html{
 
 .redirect-2{
     color: white;
+<<<<<<< HEAD
     font-size: 2rem;
+=======
+    font-size: 2.3rem;
+>>>>>>> 734c71bab4cca4ce0c233bb063fabc875757f999
     margin: 0.5rem;
+    padding-top: 0.25rem;
 }
 
 .green{
@@ -166,6 +177,11 @@ html{
 /* End of Common Styles */
 
 /* Taskbar */
+.disappear{
+    height: 0.5rem;
+    opacity: 0;
+}
+
 .taskbar{
     width: 100%;
     height: 8rem;
@@ -173,7 +189,7 @@ html{
     border-bottom: black solid;
     background-color: var(--darkblue);
     font-size: 3rem;
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -181,6 +197,7 @@ html{
     padding: 1rem 1rem;
 
     z-index: 200;
+    top:0;
 }
 
 .tb-link{
@@ -246,8 +263,8 @@ html{
     width: 30rem;
     font-size: 3rem;
 
-    margin-top: -8rem;
-    position: absolute;
+    /* margin-top: 1rem; */
+    position: fixed;
     border-right: black solid;
     background-image: linear-gradient(#138169, var(--lightblue));
     /* background-color: #1bcea8; */
@@ -309,10 +326,14 @@ html{
     width: 50vw;
     height: auto;
     background-color: var(--darkblue);
-    padding: 5rem;
+    padding: 3rem;
     border-radius: 10px;
 
+<<<<<<< HEAD
     margin-top: 5vh;
+=======
+    margin-top: 15vh;
+>>>>>>> 734c71bab4cca4ce0c233bb063fabc875757f999
     margin-left: 25vw;
     display: flex;
     flex-direction: column;
@@ -363,9 +384,6 @@ html{
     width: 100%;
     height: 100vh;
 
-    margin-top: -8rem;
-
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -582,11 +600,21 @@ html{
 }
 
 .cartpic{
+<<<<<<< HEAD
     width: 13vw;
     height: 25vh;
+=======
+    width: 23vh;
+    height: 13vw;
+>>>>>>> 734c71bab4cca4ce0c233bb063fabc875757f999
     padding: 1rem;
 
     border-radius: 15px;
+}
+
+.price-cart{
+    color: black;
+    font-size: 3.0rem;
 }
 
 .info{
@@ -619,13 +647,21 @@ html{
 
 .total{
     width: 100rem;
+<<<<<<< HEAD
     margin-left: 35vw;
+=======
+    margin-left: 27vw;
+>>>>>>> 734c71bab4cca4ce0c233bb063fabc875757f999
 
     /* border: black solid; */
 }
 
 .totalprice{
+<<<<<<< HEAD
     font-size: 4.5rem;
+=======
+    font-size: 6rem;
+>>>>>>> 734c71bab4cca4ce0c233bb063fabc875757f999
     color: black;
 }
 
@@ -652,6 +688,11 @@ html{
     justify-content: center;
 }
 
+.sec-2{
+    margin-top: -1rem;
+    padding-bottom: 2rem;
+}
+
 .remove{
     margin-left: 3.8vw;
     background-color: #ff6662;
@@ -665,25 +706,6 @@ html{
     justify-content: space-between;
 }
 /* End Of Cart-Display */
-
-/* Fill Up Form */
-.fillup{
-    width: 50vw;
-    height: auto;
-    background-color: var(--darkblue);
-    padding: 5rem;
-    border-radius: 10px;
-
-    margin-top: 10vh;
-    margin-left: 25vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-    box-shadow: black 2rem 3rem 5rem;
-}
-/* End Of Fill Up Form */
 
 /* Order Page */
 .all-orders{

@@ -231,7 +231,11 @@ def user_login(request):
             return HttpResponse("invalid login details supplied!!!")
 
     else:
+<<<<<<< HEAD
         return render(request, 'basket_app/login.html', {}) #Y else has render condition
+=======
+        return render(request, 'basket_app/login.html', {}) #Y else has rendeer condition
+>>>>>>> 734c71bab4cca4ce0c233bb063fabc875757f999
 
 @login_required
 def user_logout(request):
