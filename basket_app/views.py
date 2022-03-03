@@ -105,16 +105,17 @@ class OrderSummary(DetailView):
 
         context["cat"]= Category.objects.all
         context["count"]= Cart.objects.filter(customer= self.request.user).count()    
-        
-        order= Order.objects.filter(customer= self.request.user)
-        
-        for x in order:
-            item= OrderItem.objects.filter(order= x)
-            context["items"]= item
 
-            total= 0 
-            for c in item:
-                total= total + c.finalprice()
+        # order= get_object_or_404(Order,pk= self.kwargs.get('pk'))
+        order= Order.objects.filter(pk=self.kwargs.get('pk'))
+        order= order[0]
+        items= OrderItem.objects.filter(order= order)
+        
+        context["items"]= items
+
+        total= 0 
+        for c in items:
+            total= total + c.finalprice()
 
         context["total"]= total
 
@@ -230,7 +231,7 @@ def user_login(request):
             return HttpResponse("invalid login details supplied!!!")
 
     else:
-        return render(request, 'basket_app/login.html', {})
+        return render(request, 'basket_app/login.html', {}) #Y else has rendeer condition
 
 @login_required
 def user_logout(request):

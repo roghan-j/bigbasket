@@ -7,7 +7,7 @@ from basket_app.models import Receiver
 class CustomerForm(forms.ModelForm):
     password= forms.CharField(widget=PasswordInput)
     # EmailField.name = "jawahar"
-    email = forms.CharField(max_length=256,label="kawaarj")
+    email = forms.CharField(max_length=256,label="Email")
     
 
     class Meta():

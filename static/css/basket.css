@@ -93,6 +93,12 @@ html{
     margin: 0.5rem;
 }
 
+.rupee-3{
+    color: black;
+    font-size: 2.8rem;
+    margin: 0.5rem;
+}
+
 .btn{
     width: 25vw;
     height: 4rem;
@@ -114,7 +120,7 @@ html{
 .btn-1{
     width: 20vw;
     height: 5rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     border-radius: 25px;
     
     display: flex;
@@ -138,8 +144,9 @@ html{
 
 .redirect-2{
     color: white;
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin: 0.5rem;
+    padding-top: 0.25rem;
 }
 
 .green{
@@ -544,7 +551,7 @@ html{
 }
 
 .desc{
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: black;
 }
 
@@ -562,10 +569,15 @@ html{
 
 .cartpic{
     width: 23vh;
-    height: 23rem;
+    height: 13vw;
     padding: 1rem;
 
     border-radius: 15px;
+}
+
+.price-cart{
+    color: black;
+    font-size: 3.0rem;
 }
 
 .info{
@@ -598,13 +610,13 @@ html{
 
 .total{
     width: 100rem;
-    margin-left: 20vw;
+    margin-left: 27vw;
 
     /* border: black solid; */
 }
 
 .totalprice{
-    font-size: 7rem;
+    font-size: 6rem;
     color: black;
 }
 
@@ -629,6 +641,11 @@ html{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.sec-2{
+    margin-top: -1rem;
+    padding-bottom: 2rem;
 }
 
 .remove{
